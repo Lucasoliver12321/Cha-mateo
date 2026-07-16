@@ -172,43 +172,4 @@ app.post('/reservar', (req, res) => {
 });
 
 
-app.delete("/limpar-banco", (req, res) => {
-
-    db.run("DELETE FROM reservas", [], function(err) {
-        if (err) {
-            return res.status(500).json({
-                erro: err.message
-            });
-        }
-
-        db.run("DELETE FROM confirmacoes", [], function(err) {
-            if (err) {
-                return res.status(500).json({
-                    erro: err.message
-                });
-            }
-
-            // volta os presentes para a quantidade inicial
-            db.run(`
-                UPDATE presentes
-                SET quantidade_disponivel = quantidade_total
-            `, [], function(err) {
-
-                if (err) {
-                    return res.status(500).json({
-                        erro: err.message
-                    });
-                }
-
-                res.json({
-                    mensagem: "Banco limpo com sucesso!"
-                });
-
-            });
-
-        });
-
-    });
-
-});
 
