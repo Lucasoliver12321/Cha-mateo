@@ -92,7 +92,7 @@ localStorage.setItem("nomeConvidado", formulario.nome.value);
         const resultado = await resposta.json();
         alert(resultado.mensagem);
 
-        window.location.href = "presentinho.html";
+        window.location.href = "presentinhos.html";
 
     } catch (erro) {
         alert("Erro ao enviar confirmação.");
