@@ -593,12 +593,42 @@ button:hover {
 
 @media(max-width:768px){
 
-    img{
-        width:180px !important;
-        height:180px !important;
-        object-fit:cover;
-        margin:auto;
-        display:block;
+    .container-data img,
+    .container-horario img,
+    .container-local img{
+
+        width:35px !important;
+        height:35px !important;
+        object-fit:contain;
+
+    }
+
+
+    .container-data,
+    .container-horario,
+    .container-local{
+
+        margin:10px 15px;
+        padding:8px;
+
+    }
+
+
+    .container-data h3,
+    .container-horario h3,
+    .container-local h3{
+
+        font-size:16px;
+
+    }
+
+
+    .container-data p,
+    .container-horario p,
+    .container-local p{
+
+        font-size:13px;
+
     }
 
 }
