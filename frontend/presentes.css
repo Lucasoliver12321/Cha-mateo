@@ -666,25 +666,151 @@ body{
    RESPONSIVO
 ========================== */
 
+/* ==========================
+   RESPONSIVO
+========================== */
+
 @media(max-width:768px){
 
     .hero{
-
         padding:50px 20px;
-
     }
 
     .hero h1{
-
         font-size:34px;
-
     }
 
     .titulo-categoria{
-
         font-size:26px;
+    }
+
+
+    /* PRESENTES - 2 POR LINHA NO CELULAR */
+    .container-cards{
+
+        grid-template-columns:repeat(2, 1fr);
+
+        gap:12px;
 
     }
+
+
+    /* DIMINUI OS CARDS */
+    .card{
+
+        padding:15px;
+
+        border-radius:15px;
+
+    }
+
+
+    .icone{
+
+        width:60px;
+
+        height:60px;
+
+        margin-bottom:10px;
+
+    }
+
+
+    .icone i{
+
+        font-size:28px;
+
+    }
+
+
+    .card h2{
+
+        font-size:16px;
+
+        margin-bottom:8px;
+
+    }
+
+
+    .card span{
+
+        font-size:13px;
+
+        margin-bottom:15px;
+
+    }
+
+
+    .quantidade{
+
+        padding:10px;
+
+        margin-bottom:15px;
+
+    }
+
+
+    .quantidade small{
+
+        font-size:12px;
+
+    }
+
+
+    .quantidade h3{
+
+        font-size:28px;
+
+    }
+
+
+    .card button{
+
+        padding:10px;
+
+        font-size:14px;
+
+    }
+
+
+    /* MIMOS DO MODAL */
+    .mimos-grid{
+
+        grid-template-columns:repeat(2, 1fr);
+
+        gap:10px;
+
+    }
+
+
+    .mimo-card{
+
+        padding:12px;
+
+        font-size:14px;
+
+    }
+
+
+    /* BOTÕES DOS MODAIS */
+    .acoes-modal{
+
+        flex-direction:column;
+
+    }
+
+
+    .botoes-final{
+
+        flex-direction:column;
+
+    }
+
+}
+
+
+/* CELULARES MUITO PEQUENOS */
+@media(max-width:400px){
 
     .container-cards{
 
@@ -692,21 +818,10 @@ body{
 
     }
 
+
     .mimos-grid{
 
         grid-template-columns:1fr;
-
-    }
-
-    .acoes-modal{
-
-        flex-direction:column;
-
-    }
-
-    .botoes-final{
-
-        flex-direction:column;
 
     }
 
