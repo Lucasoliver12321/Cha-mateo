@@ -1,0 +1,706 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:#f5f9ff;
+    color:#1e293b;
+    min-height:100vh;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+.hero{
+    background: linear-gradient(135deg, #a8c5dd, #d4e8d4, #a8c5d2);
+    color:#fff;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero-content{
+    max-width:700px;
+    margin:auto;
+}
+
+.hero i{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    opacity:.95;
+    line-height:1.7;
+}
+
+/* ==========================
+   PESQUISA
+========================== */
+
+.pesquisa{
+    width:90%;
+    max-width:700px;
+    margin:35px auto;
+}
+
+#buscar{
+
+    width:100%;
+
+    padding:16px 22px;
+
+    border:none;
+
+    border-radius:50px;
+
+    font-size:16px;
+
+    outline:none;
+
+    background:#fff;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+#buscar:focus{
+
+    box-shadow:0 8px 25px rgba(37,99,235,.25);
+
+}
+
+/* ==========================
+   CATEGORIAS
+========================== */
+
+.categoria{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:50px auto;
+
+}
+
+.titulo-categoria{
+
+    font-size:32px;
+
+    color:#2563eb;
+
+    margin-bottom:35px;
+
+}
+
+/* ==========================
+   GRID
+========================== */
+
+.container-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    position:relative;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 45px rgba(0,0,0,.15);
+
+}
+
+.icone{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    background:#dbeafe;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.icone i{
+
+    color:#2563eb;
+
+    font-size:42px;
+
+}
+
+.card h2{
+
+    font-size:24px;
+
+    margin-bottom:10px;
+
+}
+
+.card span{
+
+    display:block;
+
+    color:#64748b;
+
+    margin-bottom:25px;
+
+}
+
+/* ==========================
+   QUANTIDADE
+========================== */
+
+.quantidade{
+
+    background:#eff6ff;
+
+    border-radius:15px;
+
+    padding:18px;
+
+    margin-bottom:25px;
+
+}
+
+.quantidade small{
+
+    color:#64748b;
+
+    display:block;
+
+}
+
+.quantidade h3{
+
+    color:#2563eb;
+
+    font-size:42px;
+
+    margin-top:8px;
+
+}
+
+/* ==========================
+   BOTÕES
+========================== */
+
+.card button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.card button:hover{
+
+    background:#1d4ed8;
+
+    transform:scale(1.02);
+
+}
+
+.card button:active{
+
+    transform:scale(.98);
+
+}
+
+/* ==========================
+   MODAL DOS MIMOS
+========================== */
+
+.modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.65);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+    padding:20px;
+
+}
+
+.modal-content{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:650px;
+
+    background:#fff;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    animation:abrirModal .25s ease;
+
+}
+
+@keyframes abrirModal{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.9);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+.fechar-modal{
+
+    position:absolute;
+
+    top:18px;
+
+    right:22px;
+
+    width:40px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.fechar-modal:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.modal-content h2{
+
+    margin-bottom:15px;
+
+    color:#2563eb;
+
+}
+
+.modal-content p{
+
+    margin-bottom:25px;
+
+    color:#64748b;
+
+}
+
+/* ==========================
+   MIMOS
+========================== */
+
+.mimos-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+
+    gap:15px;
+
+}
+
+.mimo-card{
+
+    padding:18px;
+
+    border-radius:15px;
+
+    background:#f8fafc;
+
+    border:2px solid transparent;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    text-align:center;
+
+}
+
+.mimo-card span{
+
+    display:block;
+
+    margin-top:10px;
+
+    font-weight:600;
+
+}
+
+.mimo-card:hover{
+
+    background:#dbeafe;
+
+    transform:translateY(-3px);
+
+}
+
+.mimo-card.ativo{
+
+    background:#2563eb;
+
+    color:white;
+
+    border-color:#1d4ed8;
+
+}
+
+/* ==========================
+   AÇÕES DO MODAL
+========================== */
+
+.acoes-modal{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:12px;
+
+    margin-top:30px;
+
+}
+
+.btn-cancelar{
+
+    padding:13px 22px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#e5e7eb;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.btn-cancelar:hover{
+
+    background:#d1d5db;
+
+}
+
+.btn-confirmar{
+
+    padding:13px 22px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+.btn-confirmar:hover{
+
+    background:#1d4ed8;
+
+}
+
+.btn-confirmar:disabled{
+
+    background:#9ca3af;
+
+    cursor:not-allowed;
+
+}
+
+/* ==========================
+   MODAL FINAL
+========================== */
+
+.modal-final{
+
+    position:fixed;
+
+    inset:0;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.65);
+
+    z-index:10000;
+
+    padding:20px;
+
+}
+
+.modal-final-card{
+
+    width:100%;
+
+    max-width:420px;
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:35px;
+
+    text-align:center;
+
+    animation:abrirModal .25s ease;
+
+}
+
+.modal-final-card h2{
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+
+.modal-final-card p{
+
+    color:#64748b;
+
+}
+
+#resumoEscolha{
+
+    margin:20px 0;
+
+    color:#2563eb;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+/* ==========================
+   BOTÕES FINAIS
+========================== */
+
+.botoes-final{
+
+    display:flex;
+
+    gap:12px;
+
+    justify-content:center;
+
+    margin-top:25px;
+
+}
+
+#voltarEscolha{
+
+    flex:1;
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    background:#e5e7eb;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+#voltarEscolha:hover{
+
+    background:#d1d5db;
+
+}
+
+#confirmarEscolha{
+
+    flex:1;
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+#confirmarEscolha:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+@media(max-width:768px){
+
+    .hero{
+
+        padding:50px 20px;
+
+    }
+
+    .hero h1{
+
+        font-size:34px;
+
+    }
+
+    .titulo-categoria{
+
+        font-size:26px;
+
+    }
+
+    .container-cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .mimos-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .acoes-modal{
+
+        flex-direction:column;
+
+    }
+
+    .botoes-final{
+
+        flex-direction:column;
+
+    }
+
+}
