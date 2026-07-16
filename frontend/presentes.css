@@ -281,27 +281,30 @@ body{
    MODAL DOS MIMOS
 ========================== */
 
-.modal{
+.modal {
 
-    position:fixed;
+    position: fixed;
 
-    inset:0;
+    inset: 0;
 
-    background:rgba(0,0,0,.65);
+    background: rgba(0,0,0,.65);
 
-    display:none;
+    display: none;
 
-    justify-content:center;
+    justify-content: center;
 
-    align-items:center;
+    align-items: flex-start;
 
     z-index:9999;
 
     padding:20px;
 
+    overflow-y:auto;
+
 }
 
-.modal-content{
+
+.modal-content {
 
     position:relative;
 
@@ -309,11 +312,15 @@ body{
 
     max-width:650px;
 
+    max-height:90vh;
+
+    overflow-y:auto;
+
     background:#fff;
 
     border-radius:25px;
 
-    padding:35px;
+    padding:25px;
 
     animation:abrirModal .25s ease;
 
