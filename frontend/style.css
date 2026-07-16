@@ -590,3 +590,15 @@ button:hover {
     }
 
 }
+
+@media(max-width:768px){
+
+    img{
+        width:180px !important;
+        height:180px !important;
+        object-fit:cover;
+        margin:auto;
+        display:block;
+    }
+
+}
