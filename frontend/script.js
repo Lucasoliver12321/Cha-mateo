@@ -289,7 +289,6 @@ if (btnConfirmar) {
 
             console.log("RESPOSTA:", resultado);
 
-
             modalFinal.style.display = "none";
 
         } catch (erro) {
