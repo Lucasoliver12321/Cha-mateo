@@ -1,7 +1,7 @@
 // =========================
 // MENU HAMBÚRGUER
 // =========================
-const API = "http://localhost:3000";
+const API = "https://cha-mateo.onrender.com";
 
 
 const menu = document.querySelector('.menu-hamburguer');
