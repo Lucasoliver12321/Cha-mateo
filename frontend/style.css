@@ -485,3 +485,108 @@ button:hover {
 
 
 /* ----------FIM TELA REALIZADO---------- */
+
+/* ==========================
+   AJUSTES HOME CELULAR
+========================== */
+
+@media(max-width:768px){
+
+    .container-convite{
+
+        padding:30px 15px;
+
+    }
+
+
+    .container-convite h1{
+
+        font-size:30px;
+
+    }
+
+
+    .container-convite h2{
+
+        font-size:22px;
+
+    }
+
+
+    .container-convite p{
+
+        font-size:15px;
+
+        margin:10px 20px;
+
+    }
+
+
+    /* IMAGENS DA HOME */
+    img{
+
+        max-width:100%;
+
+        height:auto;
+
+    }
+
+
+    .container-convite img{
+
+        width:220px;
+
+        max-height:220px;
+
+        object-fit:cover;
+
+        margin:auto;
+
+    }
+
+
+    /* BOTÕES */
+    .botão-presença,
+    .botão-lista-presentes{
+
+        width:85%;
+
+    }
+
+
+    /* CONTADOR */
+    .contador{
+
+        padding:15px;
+
+    }
+
+
+    .contador-grid{
+
+        gap:10px;
+
+    }
+
+
+    .tempo-box{
+
+        padding:10px;
+
+    }
+
+
+    .tempo-box span{
+
+        font-size:22px;
+
+    }
+
+
+    .tempo-box small{
+
+        font-size:12px;
+
+    }
+
+}
