@@ -289,7 +289,6 @@ if (btnConfirmar) {
 
             console.log("RESPOSTA:", resultado);
 
-            alert(resultado.mensagem);
 
             modalFinal.style.display = "none";
 
