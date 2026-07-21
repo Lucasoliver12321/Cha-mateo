@@ -65,8 +65,13 @@ const formulario = document.getElementById('formConfirmacao');
 
 if (formulario) {
 
-    formulario.addEventListener('submit', async function(event){
+   formulario.addEventListener('submit', async function(event){
     event.preventDefault();
+
+    const botao = formulario.querySelector("button[type='submit']");
+
+    botao.disabled = true;
+    botao.textContent = "Enviando...";
 
     const dados = {
     nome: formulario.nome.value,
@@ -95,8 +100,13 @@ localStorage.setItem("nomeConvidado", formulario.nome.value);
         window.location.href = "presentinhos.html";
 
     } catch (erro) {
-        alert("Erro ao enviar confirmação.");
-    }
+
+    botao.disabled = false;
+    botao.textContent = "Confirmar presença";
+
+    alert("Erro ao enviar confirmação.");
+
+}
     });
 }
 
