@@ -21,6 +21,9 @@ app.get('/', (req, res)=>{
     res.send('servidor rodando!');
 });
 
+
+
+
 // Rota para confirmar presença
 app.post('/confirmar', (req, res) => {
 
@@ -108,19 +111,22 @@ app.post('/reservar', (req, res) => {
                 });
             }
 
-            // Atualiza a quantidade disponível
             db.run(
-                `UPDATE presentes
-                 SET quantidade_disponivel = quantidade_disponivel - 1
-                 WHERE id = ?`,
-                [presente_id],
-                function (err) {
+    `UPDATE presentes
+     SET quantidade_disponivel = quantidade_disponivel - 1
+     WHERE id = ?`,
+    [presente_id],
+    function (err) {
 
-                    if (err) {
-                        return res.status(500).json({
-                            erro: err.message
-                        });
-                    }
+        if (err) {
+            return res.status(500).json({
+                erro: err.message
+            });
+        }
+
+        console.log("Linhas atualizadas:", this.changes);
+
+        // resto do código...
 
                  db.run(
     `
