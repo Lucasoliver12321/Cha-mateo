@@ -1,0 +1,634 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background: #faf9f7;
+}
+
+.Container-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#6b8fa8;
+
+    h2 {
+        margin: 0px 10px;
+        padding: 0%;
+
+    }
+}
+
+.container-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+/* ÍCONE DAS 3 BARRAS */
+.menu-hamburguer {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* LINKS */
+.links {
+    display: none;
+    /* ESCONDE */
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.links a {
+    text-decoration: none;
+    margin: 5px 0;
+    color: #6b8fa8;
+}
+
+.container-convite {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(135deg, #a8c5dd, #d4e8d4, #a8c5d2);
+    color: #ffffff;
+
+    h1 {
+        margin: 10px 0px;
+        padding: 0;
+        font-size: 40px;
+    }
+
+    h2 {
+        margin: 10px 0px;
+        padding: 0;
+        font-size: 25px;
+    }
+
+    p {
+        margin: 10px 30px;
+        padding: 0;
+    }
+
+}
+
+.container-botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0px;
+}
+
+.botão-presença {
+    text-decoration: none;
+    background-color: #6b8fa8;
+    border-radius: 16px;
+    color: #ffffff;
+    padding: 10px;
+    width: 60%;
+
+}
+
+.botão-lista-presentes {
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 16px;
+    color: #ffffff;
+    padding: 10px;
+    width: 60%;
+    border: solid 1px;
+}
+
+/* --------------CONTADOR-------------- */
+
+.contador {
+    background: #faf9f7;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.contador h2 {
+    text-align: center;
+    color: #6b8fa8;
+}
+
+.contador-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tempo-box {
+    background: #6b8fa8;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+}
+
+.tempo-box span {
+    display: block;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.tempo-box small {
+    color: white;
+    font-size: 14px;
+}
+
+/* -------------- FIM CONTADOR-------------- */
+
+.container-informacoes {
+    display: grid;
+    flex-direction: column;
+}
+
+.container-data {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 15px;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 20px;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    color: #6b8fa8;
+    
+    
+    img{
+        width: 50px;
+        align-items: center;
+        
+    }
+    
+    p {
+        color: #9ca3af;
+    
+    }
+}
+
+.container-horario {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 15px;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    color: #6b8fa8;
+
+    img{
+        width: 50px;
+        align-items: center;
+        
+    }
+
+    p {
+        color: #9ca3af;
+    }
+}
+
+.container-local {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 15px;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    color: #6b8fa8;
+
+    img{
+        width: 50px;
+        align-items: center;
+        
+    }
+
+    p {
+        color: #9ca3af;
+    }
+}
+
+.container-footer {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #6b8fa8;
+
+    p {
+        color: #9ca3af;
+        width: 70%;
+    }
+}
+
+/* ----------TELA CONFIRMAÇÃO---------- */
+.container-background{
+    background: linear-gradient(135deg, #a8c5dd, #d4e8d4, #a8c5d2);
+}
+
+.container-confirmação{
+    
+    color: #ffffff;
+
+    h1 {
+        text-align: center;
+        font-size: 36px;
+        
+    }
+
+    p {
+        text-align: center;
+        font-size: 18px;
+        color: #ffffff;
+    }
+}
+form {
+    background: white;
+    padding: 10px;
+    margin: 20px 15px ;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+    
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #6b8fa8;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 14px;
+    color: #6b8fa8;
+    border: 2px solid #e3e3e3;
+    border-radius: 12px;
+
+    font-size: 16px;
+
+    box-shadow: 0 0 5px lightgray;
+    outline: none;
+
+    transition: 0.3s;
+    box-sizing: border-box;
+
+    margin-bottom: 20px;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #b7d7c0;
+    box-shadow: 0 0 8px #b7d7c0;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.radio-option {
+    width: 100%;
+
+    border: 2px solid #e3e3e3;
+    border-radius: 15px;
+
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    cursor: pointer;
+    transition: 0.3s;
+
+    box-sizing: border-box;
+}
+
+.radio-option:hover {
+    border-color: #b7d7c0;
+    background: #f0fdf0;
+}
+
+.radio-option input {
+    transform: scale(1.2);
+}
+
+
+.btn-viniciustemngm {
+    display: block;
+
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #6b8fa8;
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    text-align: center;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: 0.3s;
+
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.btn-viniciustemngm:hover {
+    background: #6b8fa8;
+}
+
+
+
+/* ----------FIM TELA CONFIRMAÇÃO---------- */
+
+/* ----------TELA REALIZADO---------- */
+
+
+/* FORMULÁRIO */
+form {
+    background: white;
+    padding: 70px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+
+}
+
+/* CONTAINER */
+.containercarai {
+    text-align: center;
+}
+
+/* TITULO */
+.containercarai h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    color: #3b4a56;
+}
+
+/* TEXTO */
+.containercarai p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* TEXTO MENOR */
+.containercarai a {
+    display: block;
+    font-size: 16px;
+    color: #888;
+
+    margin-bottom: 35px;
+    text-decoration: none;
+}
+
+/* BOTÃO */
+button {
+    width: 100%;
+    padding: 14px;
+
+    border: none;
+    border-radius: 15px;
+
+    background: #a8c5dd;
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER */
+button:hover {
+    background: #f4c2c2;
+    transform: scale(1.02);
+}
+
+.btn-presente {
+    width: 100%;
+    padding: 15px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #f4c2c2;
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+
+    margin-bottom: 15px;
+}
+
+.btn-presente:hover {
+    background: #a8c5dd;
+}
+
+.btn-voltar {
+    display: block;
+
+    width: 100%;
+    padding: 15px;
+
+    border-radius: 12px;
+
+    background: #a8c5dd;
+    color: #ffffff;
+
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.btn-voltar:hover {
+    background: #f4c2c2;
+    transform: scale(1.02);
+}
+
+
+/* ----------FIM TELA REALIZADO---------- */
+
+/* ==========================
+   AJUSTES HOME CELULAR
+========================== */
+
+@media(max-width:768px){
+
+    .container-convite{
+
+        padding:30px 15px;
+
+    }
+
+
+    .container-convite h1{
+
+        font-size:30px;
+
+    }
+
+
+    .container-convite h2{
+
+        font-size:22px;
+
+    }
+
+
+    .container-convite p{
+
+        font-size:15px;
+
+        margin:10px 20px;
+
+    }
+
+
+    /* IMAGENS DA HOME */
+    img{
+
+        max-width:100%;
+
+        height:auto;
+
+    }
+
+
+    .container-convite img{
+
+        width:220px;
+
+        max-height:220px;
+
+        object-fit:cover;
+
+        margin:auto;
+
+    }
+
+
+    /* BOTÕES */
+    .botão-presença,
+    .botão-lista-presentes{
+
+        width:85%;
+
+    }
+
+
+    /* CONTADOR */
+    .contador{
+
+        padding:15px;
+
+    }
+
+
+    .contador-grid{
+
+        gap:10px;
+
+    }
+
+
+    .tempo-box{
+
+        padding:10px;
+
+    }
+
+
+    .tempo-box span{
+
+        font-size:22px;
+
+    }
+
+
+    .tempo-box small{
+
+        font-size:12px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .container-data img,
+    .container-horario img,
+    .container-local img{
+
+        width:35px !important;
+        height:35px !important;
+        object-fit:contain;
+
+    }
+
+
+    .container-data,
+    .container-horario,
+    .container-local{
+
+        margin:10px 15px;
+        padding:8px;
+
+    }
+
+
+    .container-data h3,
+    .container-horario h3,
+    .container-local h3{
+
+        font-size:16px;
+
+    }
+
+
+    .container-data p,
+    .container-horario p,
+    .container-local p{
+
+        font-size:13px;
+
+    }
+
+}
